@@ -1,155 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nick Wang - Portfolio</title>
-  <style>
-    /* General Styling */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #fff;
-      background-color: #000;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Nick Wang Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('Background.jpg'); /* Background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff; /* White text for readability */
+        }
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #111;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black navbar */
+            color: #fff;
+        }
 
-    header .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
 
-    header nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      margin: 0;
-      padding: 0;
-    }
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
 
-    header nav ul li {
-      display: inline;
-    }
+        .navbar .logo {
+            font-size: 1.5em;
+        }
 
-    header nav ul li a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-    }
+        section {
+            padding: 40px 20px;
+            margin: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 20px auto; /* Center section */
+        }
 
-    header nav ul li a.active {
-      text-decoration: underline;
-    }
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #fff; /* Underline for headings */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
 
-    /* Hero Section */
-    .hero {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 4rem 1rem;
-      position: relative;
-    }
+        p {
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
 
-    .hero-content {
-      display: flex;
-      gap: 3rem;
-      max-width: 900px;
-      width: 100%;
-    }
+        .section-heading {
+            margin-top: 40px;
+        }
 
-    .hero-image img {
-      width: 300px;
-      height: auto;
-      border-radius: 5px;
-    }
-
-    .hero-text {
-      max-width: 600px;
-    }
-
-    .hero-text h1 {
-
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero-text h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero-text p {
-      font-size: 1rem;
-      line-height: 1.8;
-      margin-bottom: 2rem;
-    }
-
-    .role-tag {
-      display: inline-block;
-      padding: 0.5rem 1rem;
-      background-color: #fff;
-      color: #000;
-      font-weight: bold;
-      border-radius: 10px;
-      letter-spacing: 2px;
-    }
-
-    /* Vertical Text */
-    .vertical-text {
-      position: absolute;
-      right: 0.5rem;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 1.5rem;
-      color: #fff;
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
-      letter-spacing: 30px;
-      opacity: 0.8;
-    }
-  </style>
+        .skills-image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto 0 auto; /* Center image */
+            border-radius: 10px; /* Optional rounded corners */
+        }
+    </style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="logo">NW.</div>
-    <nav>
-      <ul>
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="hero-image">
-        <img src="Selfy.jpg" alt="Nick Wang Portrait" />
-      </div>
-      <div class="hero-text">
-        <h1>Welcome to My Portfolio!</h1>
-        <h2>Hi, I'm Nick Wang</h2>
+    <header>
+        <div class="navbar">
+            <h1 class="logo">NW.</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about" class="active">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section>
+        <h2>About Me</h2>
         <p>
-          A second-year Global Business and Digital Arts (GBDA) student and aspiring UX designer passionate about creating user-centered solutions that connect people and ideas.
+            Hi, I’m Nick Wang, a second-year Global Business and Digital Arts (GBDA) student with a passion for crafting innovative and user-centered design solutions. My journey in design and media has been shaped by a mix of academic learning, professional experiences, and a keen interest in creative storytelling.
         </p>
-        <div class="role-tag">UX Designer</div>
-      </div>
-    </div>
-    <div class="vertical-text">GBDA 2A</div>
-  </section>
+    </section>
+
+    <section class="section-heading">
+        <h2>My Background</h2>
+        <p>
+            From September 2023 to June 2024, I worked in the Media Department at Waterloo Independent Secondary School (WISS). My role involved capturing the essence of school life as a photographer, creating posters, promotional videos, and event graphics, and sharing these across platforms like Instagram, Twitter, and Facebook. This experience honed my ability to tell compelling visual stories and effectively manage content for social media audiences.
+        </p>
+    </section>
+
+    <section class="section-heading">
+        <h2>My Skills and Expertise</h2>
+        <p>
+            Throughout my academic and professional journey, I’ve mastered tools like Photoshop, Illustrator, Premiere Pro, InDesign, and Audition from Creative Cloud. Additionally, I have experience leveraging Generative AI tools to enhance creative workflows and streamline content production. These technical skills, combined with my leadership experience as a project leader in university, enable me to guide teams to successfully execute complex design projects.
+        </p>
+        <!-- Add the Cloud.png image -->
+        <img src="Cloud.png" alt="Cloud Design Concept" class="skills-image">
+    </section>
+
+    <section class="section-heading">
+        <h2>Working Style</h2>
+        <p>
+            I thrive in collaborative environments where ideas are shared and refined. As a leader, I prioritize clear communication and structured planning, ensuring every team member contributes to and aligns with the project’s vision. At the same time, I value independent work, utilizing creativity and problem-solving to produce results that exceed expectations.
+        </p>
+    </section>
 </body>
 </html>
